@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Donelles</title>
+</head>
+<body style="background-color: black;">    
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+    <div class="container-fluid text-white" style="background-color: grey;">
+        <h1> Contacto</h1>
+    </div>
+    <dl class="row">
+        <dt class="col-sm-3 text-white fs-5">e-mail</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4 text-white fs-5">litta@wheel.com</dt>
+            <dd class="col-sm-8 text-white">comaentario1</dd>
+          </dl>
+        </dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-3 text-white fs-5">Teléfono</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4 text-white fs-5">666 777 888</dt>
+            <dd class="col-sm-8 text-white">comentario2</dd>
+          </dl>
+        </dd>
+    </dl>
+    {% endblock %}
+  
+
+    
+</body>
+</html>

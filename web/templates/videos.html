@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos Donelles</title>
+</head>
+<body style="background-color: black;">
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+    <div class="container-fluid text-white" style="background-color: grey;">
+        <h1> Vídeos</h1>
+    </div>
+        <div class="container-fluid align-items-center" style="background-color: black;">
+            <div class="row border border-dark align-items-center">                
+                <div class="col-lg-2 "></div>
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="card mx-auto d-block text-white" style="width: 10rem; background-color: black;">
+                        <img src="{% static 'tomate1.jpg' %}" class="card-img-top rounded-circle" alt="concierto_habitual">
+                        <div class="card-body">
+                            <a href="https://www.youtube.com/watch?v=qeErvOtg-wI" class="btn btn-primary bg-dark">Tomate Blues</a>
+                        </div>
+                    </div>  
+                </div> 
+                <div class="col-lg-2 col-md-6 col-sm-12">
+                    <div class="card mx-auto d-block text-white" style="width: 10rem; background-color: black;">
+                        <img src="{% static '2.jpg' %}" class="card-img-top rounded-circle" alt="concierto_habitual">
+                        <div class="card-body">
+                            <a href="https://www.youtube.com/watch?v=qeErvOtg-wI" class="btn btn-primary bg-dark">Icónica Festival</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-2 col-md-6 col-sm-12 ">
+                    <div class="card mx-auto d-block text-white" style="width: 10rem; background-color: black;">
+                        <img src="{% static 'verano_1.png' %}" class="card-img-top rounded" alt="concierto_habitual">
+                        <div class="card-body">
+                            <a href="https://www.youtube.com/watch?v=qeErvOtg-wI" class="btn btn-primary bg-dark">Festival Blues Cazorla</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-2 col-md-6 col-sm-12 ">
+                    <div class="card mx-auto d-block text-white" style="width: 5rem; background-color: black;">
+                        <img src="{% static '1.png' %}" class="card-img-top rounded-circle" alt="concierto_habitual">
+                        <div class="card-body">
+                            <a href="https://www.youtube.com/watch?v=qeErvOtg-wI" class="btn btn-primary bg-dark">Guillena</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-2"></div>              
+            </div>
+        </div>
+
+
+
+    {% endblock %}
+</body>
+</html>

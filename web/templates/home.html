@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donelles Home</title>
+</head>
+<body style="background-color:black">
+    {% extends "base.html" %}
+    {% load static %}
+    {% block content %}
+    <div class="col-md-2 text-white">
+        <h1>Home</h1>
+    </div>
+     <div class="container-fluid " style="background-color: black;">
+            <div class="d-flex p-2 bd-highlight" style="background-color: black;></div>
+            <div class="col-md-12" style="background-color: black;">
+                <img src="{% static '2.jpg' %}" class="img-fluid mx-auto d-block border border-light rounded-circle py=3" width="500">
+            </div>
+            <div class="d-flex p-2 bd-highlight" style="background-color: black;"></div>
+        </div>
+    </div>
+    <div class="container-fluid lead fs-4 text-white py=3" style="background-color: black;">
+        <h1>The Donelles</h1>
+        Si al pasar por algún garito en Sevilla o alrededores os topáis con 3 mujeres vestidas al más puro estilo vintage cantando a 3 voces en armonización vocal y os sentís trasladados de repente a la década de los 60 gracias al sonido Motown de su música, no lo dudéis un instante.
+        Entrad y disfrutad de una velada irrepetible con la música de The Donelles. Andrew’s Sister, The Shirelles, Ray Charles, Elvis Presley o Etta James son solo algunos de los artistas versionados en las voces de Litta Wheel, Laura Serrano y Alba Carrasco, arropadas por el acompañamiento rítmico de Leo Aranda, Roque Torralva y Santiago Ruiz, que empujan a la banda desde el bajo, la batería y el piano respectivamente.
+        El estilo está impregnado de rhythm and blues, de swing y de soul, del espíritu de la música popular afroamericana de las décadas de los 40´s y los 50´s de la que disfrutaréis como niños gracias a la pureza del sonido de esta banda capaz de teñir de negro incluso el pop blanco de The Beatles.
+        0´s de la que disfrutaréis como niños gracias a la pureza del sonido de esta banda capaz de teñir de negro incluso el pop blanco de The Beatles.</h5>
+    </div>   
+    <div class="container-fluid " style="background-color: black;">
+        <div class="row">
+            <div class="d-flex p-2 bd-highlight"></div>
+            <div class="col-md-12">
+                <img src="{% static 'iconica1.jpg' %}" class="img-fluid mx-auto d-block border border-light py=3" width="1500">
+            </div>
+             <div class="d-flex p-2 bd-highlight"></div>
+        </div>
+    </div>
+
+    {% endblock %}
+</body>
+</html>

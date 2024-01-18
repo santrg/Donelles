@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shows Donelles</title>
+</head>
+<body style="background-color: black;">
+    {% extends 'base.html' %}
+    {% load static %}
+    {% block content %}
+    <div class="container-fluid text-white" style="background-color: grey;">
+        <h1>Shows</h1>
+    </div>
+   <div class="row align-items-center">
+      <div class="col-md-6" >
+        <div class="card mx-auto d-block" style="width: 28rem;">
+          <img src="{% static 'tomate1.jpg' %}" class="card-img-top" alt="concierto_habitual">
+          <div class="card-body">
+            <h5 class="card-title">Concierto habitual</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="https://www.youtube.com/watch?v=qeErvOtg-wI" class="btn btn-primary">Muestra</a>
+          </div>
+        </div> 
+      </div>
+      <div class="col-md-6">
+        <div class="card mx-auto d-block" style="width: 28rem;">
+          <img src="{% static 'teatro1.jpg' %}" class="card-img-top" alt="concierto_habitual">
+          <div class="card-body">
+            <h5 class="card-title">"Música a Través de la Mujer"</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">Muestra</a>
+          </div>
+        </div> 
+      </div>
+   </div>   
+    
+   
+        
+    {% endblock %}
+    
+</body>
+</html>
