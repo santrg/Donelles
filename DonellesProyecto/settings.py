@@ -33,7 +33,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='sueinfk87626@#~@~2kjh2124') #
 DEBUG = 'RENDER' not in os.environ            #os.environ.get('DEBUG')     #True    #'RENDER' not in os.environ ((para desplegar en render.com))  
 
 ALLOWED_HOSTS = [
-#    'www.thedonelles.info'
+    'www.thedonelles.info'
 ]
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
