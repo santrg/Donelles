@@ -27,14 +27,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', default='sueinfk87626@#~@~2kjh2124') #'#*#z^%j@p8yfnc^#em0=z!8*^$t0qjoaumjao*ov8!r#$0emcf' #os.environ.get('SECRET_KEY')  
+SECRET_KEY = os.environ.get('SECRET_KEY', default='#*#z^%j@p8yfnc^#em0=z!8*^$t0qjoaumjao*ov8!r#$0emcf') #'#*#z^%j@p8yfnc^#em0=z!8*^$t0qjoaumjao*ov8!r#$0emcf' #os.environ.get('SECRET_KEY')  
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ            #os.environ.get('DEBUG')     #True    #'RENDER' not in os.environ ((para desplegar en render.com))  
 
-ALLOWED_HOSTS = [
-#    'www.thedonelles.info'
-]
+ALLOWED_HOSTS = []
 
 RENDER_EXTERNAL_HOSTNAME = os.environ.get('RENDER_EXTERNAL_HOSTNAME')
 if RENDER_EXTERNAL_HOSTNAME:
